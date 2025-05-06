@@ -321,3 +321,46 @@ blockquote cite a {
     color: #1db954;
 }
 
+
+
+#social {
+    background-color: #222;
+    padding: 3rem 0;
+}
+
+#social h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.social-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-item {
+    font-size: 1.2rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-item i {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.social-item a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.social-item a:hover {
+    color: #1db954;
+}
+
