@@ -103,12 +103,6 @@ header {
     padding: 3rem 0;
 }
 
-#releases h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
 .releases-list {
     display: flex;
     justify-content: center;
