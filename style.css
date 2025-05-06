@@ -7,10 +7,9 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #000; /* Black background */
+    background-color: #000;
     color: #fff;
     line-height: 1.6;
-    margin: 0;
 }
 
 /* Container for centering content */
@@ -20,28 +19,40 @@ body {
     margin: 0 auto;
 }
 
-/* Header Section with Banner */
+/* Header Section */
 header {
-    position: relative;
     width: 100%;
-    height: 400px; /* Adjust the height as necessary */
-    margin-bottom: 50px; /* Added margin to prevent overlap with the next section */
+    margin-bottom: 50px;
 }
 
-/* Banner Image */
 .banner {
-    width: 100%;
-    height: 300px; /* Adjust height as necessary */
-    background-color: #222; /* Fallback color in case image fails to load */
     position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+    text-align: center;
 }
 
 .banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto; /* Keep the aspect ratio */
-    object-fit: cover; /* Ensure the image covers the banner area */
-    display: block;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.banner-text {
+    z-index: 2;
+    color: #fff;
+    padding: 2rem;
 }
 
 .band-name {
@@ -49,22 +60,18 @@ header {
     font-weight: bold;
     letter-spacing: 3px;
     text-transform: uppercase;
-    text-align: center;
-    padding-top: 100px; /* Increased padding-top for better positioning of the band name */
 }
 
 .tagline {
     font-size: 1.5rem;
     font-style: italic;
-    text-align: center;
     margin-top: 1rem;
 }
 
 /* Band Members Section */
 #band-members {
-    background-color: #222; /* Slightly lighter black-gray for contrast */
+    background-color: #222;
     padding: 3rem 0;
-    margin-top: 50px; /* Added margin-top to prevent overlap with header */
 }
 
 #band-members h2 {
@@ -96,13 +103,18 @@ header {
     margin-top: 1rem;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #fff;
 }
 
 /* Releases Section */
 #releases {
-    background-color: #0c3c6f;
+    background-color: #003366;
     padding: 3rem 0;
+}
+
+#releases h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .releases-list {
@@ -113,20 +125,19 @@ header {
 }
 
 .release-item {
-    display: inline-block;
     transition: transform 0.3s ease-in-out;
 }
 
 .release-item:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.1);
 }
 
 .release-image {
-    width: 200px; /* Adjust the width to match the size of the member images */
-    height: 200px; /* Make it square */
-    object-fit: cover; /* Ensure the image covers the area without distorting */
-    border-radius: 5px; /* Optional: Adds a slight rounding of corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Adds shadow */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer Section */
@@ -139,4 +150,34 @@ footer {
 
 footer p {
     font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .band-name {
+        font-size: 2.5rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .member img, .release-image {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .band-name {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .banner-text {
+        padding: 1rem;
+    }
 }
