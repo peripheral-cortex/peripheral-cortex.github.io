@@ -131,10 +131,14 @@
     <!-- Footer -->
 <footer>
     <div class="container">
-        <p>&copy; 2025 Peripheral Cortex | All Rights Reserved</p>
+      
+        <p>&copy; <span id="year"></span> Peripheral Cortex | All Rights Reserved</p>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
     </div>
 </footer>
-
 
 </body>
 </html>
