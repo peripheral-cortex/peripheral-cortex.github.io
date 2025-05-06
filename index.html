@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        <!-- Basic SEO Meta Tags -->
+        <!-- Animate On Scroll -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+        <!-- Basic SEO Meta Tags -->
     <meta name="description" content="Official website of Peripheral Cortex, Berlin’s finest cacophonic dance band. Explore our music, videos, and latest releases.">
     <meta name="keywords" content="Peripheral Cortex, Technical Death Metal, Berlin band, experimental metal, progressive metal, jazz metal, cacophonic, bandcamp">
     <meta name="author" content="Peripheral Cortex">
@@ -29,6 +31,8 @@
 <meta name="twitter:image" content="images/album-art-gkh.png">
 
 </head>
+
+    
 <body>
 
     <!-- Header with Band Banner -->
@@ -70,9 +74,9 @@
     <!-- Band Members Section -->
     <section id="band-members">
         <div class="container">
-            <h2>Members</h2>
+          <h2 data-aos="fade-up">Members</h2>
             <div class="members">
-                <div class="member">
+                <div class="member" data-aos="fade-up" data-aos-delay="100">
                     <img src="images/rob-photo.jpg" alt="Rob - Bass">
                     <p class="member-name">Rob - Bass</p>
                 </div>
@@ -165,6 +169,17 @@
 
     </div>
 </footer>
+
+       <!-- Animate On Scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true, // animations trigger only once
+    duration: 600, // animation duration in ms
+    easing: 'ease-out-cubic'
+  });
+</script>
+
 
 </body>
 </html>
