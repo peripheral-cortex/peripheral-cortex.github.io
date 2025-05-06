@@ -104,24 +104,28 @@ header {
     margin-bottom: 1.5rem;
 }
 
-ul {
-    list-style-type: none;
-    text-align: center;
+.releases-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
-ul li {
-    margin: 1rem 0;
+.release-item {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
 }
 
-ul li a {
-    color: #f0f0f0;
-    text-decoration: none;
-    font-size: 1.2rem;
+.release-item:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
-ul li a:hover {
-    color: #ffcc00;
-    text-decoration: underline;
+.release-image {
+    width: 200px; /* Adjust the width to match the size of the member images */
+    height: 200px; /* Make it square */
+    object-fit: cover; /* Ensure the image covers the area without distorting */
+    border-radius: 5px; /* Optional: Adds a slight rounding of corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Adds shadow */
 }
 
 /* Footer Section */
