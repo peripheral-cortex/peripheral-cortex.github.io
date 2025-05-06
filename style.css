@@ -195,17 +195,17 @@ footer p {
 
 .video-grid {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
 .video-container {
-    width: 100%;
+    flex: 0 1 45%; /* Let two videos sit side by side on larger screens */
     max-width: 500px;
     aspect-ratio: 16 / 9;
-    overflow: hidden;
     border-radius: 8px;
+    overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -215,3 +215,9 @@ footer p {
     border: none;
 }
 
+/* Responsive tweak for mobile */
+@media (max-width: 768px) {
+    .video-container {
+        flex: 0 1 100%;
+    }
+}
