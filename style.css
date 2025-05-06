@@ -25,6 +25,7 @@ header {
     position: relative;
     width: 100%;
     height: 400px; /* Adjust the height as necessary */
+    margin-bottom: 50px; /* Added margin to prevent overlap with the next section */
 }
 
 /* Banner Image */
@@ -49,7 +50,7 @@ header {
     letter-spacing: 3px;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 100px; /* Increased padding-top for better positioning of the band name */
 }
 
 .tagline {
@@ -63,6 +64,7 @@ header {
 #band-members {
     background-color: #222; /* Slightly lighter black-gray for contrast */
     padding: 3rem 0;
+    margin-top: 50px; /* Added margin-top to prevent overlap with header */
 }
 
 #band-members h2 {
