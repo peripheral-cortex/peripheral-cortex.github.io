@@ -8,7 +8,7 @@ body, html {
 
 /* Set the background image for the entire page */
 header {
-    background-image: url('https://github.com/your-username/your-repository-name/raw/main/banner-image.jpg');
+    background-image: url('https://raw.githubusercontent.com/peripheral-cortex/peripheral-cortex.github.io/refs/heads/main/banner.jpg');
     background-size: cover; /* Makes sure the image covers the entire header area */
     background-position: center; /* Centers the image */
     background-attachment: fixed; /* Fixes the image in place when the user scrolls */
